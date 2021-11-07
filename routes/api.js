@@ -1,22 +1,22 @@
 import { Router } from 'express'
 const router = Router()
 
-import * as puppiesCtrl from '../controllers/puppies.js'
+import * as connectCtrl from '../controllers/connect.js'
 
-// GET	/api/puppies	Retrieve ALL puppies
-router.get('/puppies', puppiesCtrl.index)
+// GET	/api/connect	Retrieve ALL connect
+router.get('/connect', connectCtrl.index)
 
-// GET	/api/puppies/:id	Retrieve a SINGLE puppy
-router.get('/puppies/:id', puppiesCtrl.show)
+// GET	/api/connect/:id	Retrieve a SINGLE puppy
+router.get('/connect/:id', connectCtrl.show)
 
-// POST	/api/puppies	Add a puppy
-router.post('/puppies', puppiesCtrl.create)
+// POST	/api/connect	Add a puppy
+router.post('/connect', connectCtrl.create)
 
-// PUT	/api/puppies/:id	Update a puppy
-router.put('/puppies/:id', puppiesCtrl.update)
+// PUT	/api/connect/:id	Update a puppy
+router.put('/connect/:id', connectCtrl.update)
 
-// DELETE	/api/puppies/:id	Delete a puppy
-router.delete('/puppies/:id', puppiesCtrl.delete)
+// DELETE	/api/connect/:id	Delete a puppy
+router.delete('/connect/:id', connectCtrl.delete)
 
 export {
   router
